@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoxKids — Animal World for Kids</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- =================== NAVBAR =================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">🦊</span>
+      <span class="logo-text">FoxKids</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#animals">Animals</a></li>
+      <li><a href="#facts">Fun Facts</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#videos">Videos</a></li>
+    </ul>
+    <button class="nav-cta">Start Learning 🌟</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- =================== HERO =================== -->
+  <section class="hero" id="hero">
+    <div class="hero-video-wrap">
+      <video
+        class="hero-video"
+        src="public/videos/hero-fox.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Floating paw prints -->
+    <div class="paw paw-1">🐾</div>
+    <div class="paw paw-2">🐾</div>
+    <div class="paw paw-3">🐾</div>
+    <div class="paw paw-4">🐾</div>
+
+    <div class="hero-content">
+      <div class="hero-badge">🌍 Explore the Animal Kingdom</div>
+      <h1 class="hero-title">
+        Meet Amazing<br />
+        <span class="hero-highlight">Animals!</span>
+      </h1>
+      <p class="hero-sub">
+        Discover fun facts, watch cool videos, and play quizzes about your favourite wild friends!
+      </p>
+      <div class="hero-btns">
+        <a href="#animals" class="btn btn-primary">Explore Animals 🐾</a>
+        <a href="#quiz" class="btn btn-secondary">Take a Quiz 🧩</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Animals</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Fun Facts</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Quizzes</span></div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- =================== CATEGORIES =================== -->
+  <section class="categories" id="animals">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🐾 Animal Families</span>
+        <h2>Which animals do you love?</h2>
+        <p>Pick a group and start your adventure!</p>
+      </div>
+      <div class="category-grid">
+        <div class="category-card" style="--c:#FFD166">
+          <div class="cat-emoji">🦁</div>
+          <h3>Wild Animals</h3>
+          <p>Lions, tigers, elephants & more</p>
+          <span class="cat-count">48 animals</span>
+        </div>
+        <div class="category-card" style="--c:#06D6A0">
+          <div class="cat-emoji">🐬</div>
+          <h3>Ocean Life</h3>
+          <p>Dolphins, sharks, whales & fish</p>
+          <span class="cat-count">62 animals</span>
+        </div>
+        <div class="category-card" style="--c:#118AB2">
+          <div class="cat-emoji">🦅</div>
+          <h3>Birds</h3>
+          <p>Eagles, parrots, penguins & owls</p>
+          <span class="cat-count">35 animals</span>
+        </div>
+        <div class="category-card" style="--c:#EF476F">
+          <div class="cat-emoji">🐸</div>
+          <h3>Reptiles & Amphibians</h3>
+          <p>Frogs, lizards, snakes & crocs</p>
+          <span class="cat-count">29 animals</span>
+        </div>
+        <div class="category-card" style="--c:#9B5DE5">
+          <div class="cat-emoji">🐛</div>
+          <h3>Insects & Bugs</h3>
+          <p>Butterflies, bees, ants & beetles</p>
+          <span class="cat-count">41 animals</span>
+        </div>
+        <div class="category-card" style="--c:#F77F00">
+          <div class="cat-emoji">🐶</div>
+          <h3>Pet Friends</h3>
+          <p>Dogs, cats, rabbits & hamsters</p>
+          <span class="cat-count">18 animals</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FEATURED ANIMALS =================== -->
+  <section class="featured" id="featured">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">⭐ Featured</span>
+        <h2>Today's Animal Stars</h2>
+        <p>Learn something new about these amazing creatures!</p>
+      </div>
+      <div class="animals-grid">
+
+        <div class="animal-card">
+          <div class="animal-img-wrap" style="background:linear-gradient(135deg,#FFD166,#F77F00)">
+            <div class="animal-emoji">🦊</div>
+          </div>
+          <div class="animal-body">
+            <div class="animal-badge">Forest</div>
+            <h3>Red Fox</h3>
+            <p>Foxes are super clever! They can hear a mouse under 3 feet of snow and jump on it exactly.</p>
+            <div class="animal-facts">
+              <span>🌍 Found worldwide</span>
+              <span>⚖️ 3–11 kg</span>
+              <span>📏 45–90 cm</span>
+            </div>
+            <button class="btn-learn">Learn More →</button>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <div class="animal-img-wrap" style="background:linear-gradient(135deg,#06D6A0,#118AB2)">
+            <div class="animal-emoji">🐬</div>
+          </div>
+          <div class="animal-body">
+            <div class="animal-badge ocean">Ocean</div>
+            <h3>Bottlenose Dolphin</h3>
+            <p>Dolphins are so smart they have names for each other! They call friends by a unique whistle.</p>
+            <div class="animal-facts">
+              <span>🌊 All oceans</span>
+              <span>⚖️ 150–650 kg</span>
+              <span>📏 2–4 m</span>
+            </div>
+            <button class="btn-learn">Learn More →</button>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <div class="animal-img-wrap" style="background:linear-gradient(135deg,#EF476F,#9B5DE5)">
+            <div class="animal-emoji">🦋</div>
+          </div>
+          <div class="animal-body">
+            <div class="animal-badge bug">Insect</div>
+            <h3>Monarch Butterfly</h3>
+            <p>Monarchs travel up to 4,500 km every year without a map — just using the sun as their compass!</p>
+            <div class="animal-facts">
+              <span>🌻 North America</span>
+              <span>⚖️ 0.5 g</span>
+              <span>📏 10 cm wingspan</span>
+            </div>
+            <button class="btn-learn">Learn More →</button>
+          </div>
+        </div>
+
+        <div class="animal-card">
+          <div class="animal-img-wrap" style="background:linear-gradient(135deg,#A8DADC,#457B9D)">
+            <div class="animal-emoji">🐘</div>
+          </div>
+          <div class="animal-body">
+            <div class="animal-badge wild">Wild</div>
+            <h3>African Elephant</h3>
+            <p>Elephants never forget — they can remember the faces of hundreds of friends for decades!</p>
+            <div class="animal-facts">
+              <span>🌍 Africa</span>
+              <span>⚖️ up to 6,000 kg</span>
+              <span>📏 3–4 m tall</span>
+            </div>
+            <button class="btn-learn">Learn More →</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FUN FACTS =================== -->
+  <section class="fun-facts" id="facts">
+    <div class="facts-bg-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+    </div>
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">💡 Did You Know?</span>
+        <h2>Wow-worthy Animal Facts!</h2>
+        <p>Swipe through amazing facts — then share with friends!</p>
+      </div>
+      <div class="facts-carousel" id="factsCarousel">
+        <div class="fact-slide active">
+          <div class="fact-icon">🐙</div>
+          <p class="fact-text">An octopus has <strong>three hearts</strong>, blue blood, and can change colour in under a second!</p>
+          <span class="fact-animal">Octopus</span>
+        </div>
+        <div class="fact-slide">
+          <div class="fact-icon">🦒</div>
+          <p class="fact-text">A giraffe's tongue is <strong>45–50 cm long</strong> and dark purple to protect it from sunburn!</p>
+          <span class="fact-animal">Giraffe</span>
+        </div>
+        <div class="fact-slide">
+          <div class="fact-icon">🦦</div>
+          <p class="fact-text">Sea otters hold hands while sleeping so they don't <strong>drift apart</strong> in the ocean!</p>
+          <span class="fact-animal">Sea Otter</span>
+        </div>
+        <div class="fact-slide">
+          <div class="fact-icon">🐦</div>
+          <p class="fact-text">Flamingos are born <strong>white</strong> — they turn pink from the shrimp they eat!</p>
+          <span class="fact-animal">Flamingo</span>
+        </div>
+        <div class="fact-slide">
+          <div class="fact-icon">🦈</div>
+          <p class="fact-text">Sharks are older than trees! They've been on Earth for over <strong>450 million years</strong>.</p>
+          <span class="fact-animal">Shark</span>
+        </div>
+      </div>
+      <div class="facts-nav">
+        <button class="facts-btn" id="factPrev">&#8592;</button>
+        <div class="facts-dots" id="factsDots"></div>
+        <button class="facts-btn" id="factNext">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== QUIZ =================== -->
+  <section class="quiz-section" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🧩 Test Your Knowledge</span>
+        <h2>Animal Quiz Time!</h2>
+        <p>How many can you get right?</p>
+      </div>
+
+      <div class="quiz-box" id="quizBox">
+        <div class="quiz-progress">
+          <div class="quiz-progress-bar" id="quizBar"></div>
+        </div>
+        <div class="quiz-counter" id="quizCounter">Question 1 of 5</div>
+
+        <div class="quiz-question" id="quizQuestion">Loading question...</div>
+        <div class="quiz-options" id="quizOptions"></div>
+
+        <div class="quiz-result hidden" id="quizResult">
+          <div class="result-icon" id="resultIcon"></div>
+          <div class="result-msg" id="resultMsg"></div>
+          <button class="btn btn-primary" id="quizNext">Next Question →</button>
+        </div>
+      </div>
+
+      <div class="quiz-score-board hidden" id="scoreBoard">
+        <div class="score-emoji" id="scoreEmoji"></div>
+        <h3 id="scoreTitle"></h3>
+        <p id="scoreMsg"></p>
+        <div class="score-display" id="scoreDisplay"></div>
+        <button class="btn btn-primary" id="restartQuiz">Play Again 🎉</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== VIDEOS =================== -->
+  <section class="videos-section" id="videos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🎬 Watch & Learn</span>
+        <h2>Animal Videos</h2>
+        <p>See animals in action — up close and amazing!</p>
+      </div>
+      <div class="videos-grid">
+        <div class="video-card featured-video">
+          <video src="public/videos/hero-fox.mp4" controls muted loop playsinline poster=""></video>
+          <div class="video-info">
+            <span class="video-tag">🦊 Fox</span>
+            <h4>Chibi Fox Walks Toward You</h4>
+            <p>Watch this adorable fox curiously approaching — see how it moves so gracefully!</p>
+          </div>
+        </div>
+        <div class="video-card placeholder-card">
+          <div class="video-placeholder">
+            <div class="vp-emoji">🦁</div>
+            <span>Lions on the Savanna</span>
+            <div class="vp-badge">Coming Soon</div>
+          </div>
+        </div>
+        <div class="video-card placeholder-card">
+          <div class="video-placeholder">
+            <div class="vp-emoji">🐬</div>
+            <span>Dolphins Playing</span>
+            <div class="vp-badge">Coming Soon</div>
+          </div>
+        </div>
+        <div class="video-card placeholder-card">
+          <div class="video-placeholder">
+            <div class="vp-emoji">🦅</div>
+            <span>Eagle Hunting</span>
+            <div class="vp-badge">Coming Soon</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CTA BANNER =================== -->
+  <section class="cta-banner">
+    <div class="cta-shapes">
+      <span>🐾</span><span>🌿</span><span>⭐</span><span>🐾</span><span>🦋</span>
+    </div>
+    <div class="container">
+      <h2>Ready to become an Animal Expert? 🌟</h2>
+      <p>Join thousands of kids exploring the amazing animal kingdom every day!</p>
+      <button class="btn btn-white">Start Your Adventure 🚀</button>
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🦊</span>
+        <span class="logo-text">FoxKids</span>
+        <p>Making learning about animals fun for every child!</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#animals">Animals</a></li>
+          <li><a href="#facts">Fun Facts</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#videos">Videos</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="#">Wild Animals</a></li>
+          <li><a href="#">Ocean Life</a></li>
+          <li><a href="#">Birds</a></li>
+          <li><a href="#">Insects</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Parents</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Safety</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FoxKids · Made with ❤️ for curious kids everywhere</p>
+    </div>
+  </footer>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
